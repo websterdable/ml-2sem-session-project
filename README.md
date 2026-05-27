@@ -12,22 +12,29 @@
 
 Соревнование: [Signal Types Classification](https://www.kaggle.com/competitions/signal-types-classification)
 
+final_solution.ipynb - итоговое решение, создавался и выполнялся в Google Colab.
+
 ---
 
 ## Структура репозитория
+
+Поскольку способы прочтения файлов отличаются от среды к среде, датасет был сохранён дважды, чтобы не ломать текущую структуру - в корневой папке проекта и в папке с неудавшимися решениями experiments/.
+
 ```bash
 ├── README.md
-├── Description.pdf 			    # Работа о проблеме определения типов сигналов сцинтилляционного детектора. Задача разделения сигналов и её решения.
+├── Description.pdf 			                  # Работа о проблеме определения типов сигналов сцинтилляционного детектора. Задача разделения сигналов и её решения.                        
 ├── Run200_Wave_0_1.txt                     # Набор данных о сигналах (из условия на Kaggle)
 ├── test-dataset.ipynb                      # Файл-пример чтения и отображения данных (из условия на Kaggle)
 ├── final_solution.ipynb                    # Эталонный ноутбук с финальным решением
 ├── experiments/
+  ├── Run200_Wave_0_1.txt 
   ├── contamination_tuning.ipynb            # Подбор contamination
   ├── weights_tuning.ipynb                  # Подбор весов decay_tau и пар признаков v3
   └── failed_clustering_attempts.ipynb      # GMM, DBSCAN, Agglomerative, дендрограмма
 └── submissions/
-  └── submission_v3_best_optim.csv          # Финальный сабмишен (Score 0.80569)
+  └── submission_v3_best_optim.csv          # Финальный submission (score 0.80569)
 └── screenshots/
+  ├── screenshot_leaderboard.png
   ├── submissions_history_0.png
   ├── submissions_history_1.png
   ├── submissions_history_2.png
