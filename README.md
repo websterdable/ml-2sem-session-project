@@ -15,6 +15,7 @@
 ---
 
 ## Структура репозитория
+```bash
 ├── README.md
 ├── Description.pdf 			    # Работа о проблеме определения типов сигналов сцинтилляционного детектора. Задача разделения сигналов и её решения.
 ├── Run200_Wave_0_1.txt                     # Набор данных о сигналах (из условия на Kaggle)
@@ -37,7 +38,7 @@
   ├── submissions_history_7.png
   ├── submissions_history_8.png
   └── submissions_history_9.png
-
+```
 
 ---
 
